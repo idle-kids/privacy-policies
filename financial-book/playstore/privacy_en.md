@@ -46,7 +46,7 @@ If you turn on cloud backup, this data goes into an encrypted backup file in you
 - Usage statistics are optional. They start off, and nothing that happened before you turn them on is sent later.
 - Where: Google Analytics for Firebase (Google LLC).
 - What: which screens and features are used and how often, and whether features such as automatic entry or device pairing complete. Each record carries only a fixed category code, never a value you entered.
-- What the analytics service also receives: a random number created for each installation, device model, operating system and app version, and an approximate location derived from your IP address.
+- What the analytics service also receives: a random number created for each installation, device model, operating system and app version, and an approximate location derived from your IP address. If you buy a paid feature, the analytics service detects the completed Google Play purchase on its own and also records the product, price and currency. It does not receive payment details such as card numbers.
 - Not used for: the app does not read the advertising ID, and the data is never used for ads, ad personalization, or tracking you across other apps.
 - Purpose: only to make the app easier to use.
 - Retention: individual records are deleted after 2 months. Totals combined across many users (for example, the average number of entries per day) cannot be split back into one person's share, so they are kept.
@@ -73,6 +73,7 @@ Each permission is requested when you first use the feature that needs it. If yo
 
 - Payments for paid features are handled by Google Play. Neither the developer nor the app receives your card number or other payment details.
 - The app gets purchase records (product, purchase state, and a purchase token) from the Google Play app on your device to confirm what you own, and stores them on your device.
+- If usage statistics are on, the analytics service records the product, price and currency of a purchase (4-3).
 - The developer uses the order details Google Play provides (order number, product, country of purchase and the like) to handle refunds and questions, and to keep the records the law requires.
 
 ## 8. Feedback and questions
